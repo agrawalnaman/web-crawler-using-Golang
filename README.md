@@ -47,6 +47,7 @@ cd go/src
 git clone https://github.com/agrawalnaman/web-crawler-using-Golang.git
 ```
 ## Run crawl.go (Step-5)
+command for running the script:`go run crawl.go <Base URL>`
 ```console
 cd web-crawler-using-Golang/
 go run crawl.go http://rescale.com/
