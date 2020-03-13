@@ -34,7 +34,7 @@ sudo apt install golang-go
 ```console
 alias gopath='export GOPATH=$(pwd);export PATH=$PATH:$GOPATH/bin'`
 ```
-### If go already installed follow the steps below to clone the repo and run the script : 
+# If go already installed follow the steps below to clone the repo and run the script : 
 	
 ##  Installing 3rd party package (Required dependency) (Step-3)
 ```console
