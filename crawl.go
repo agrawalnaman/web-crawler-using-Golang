@@ -44,7 +44,7 @@ func main() {
 	for i := 0; i < 5; i++ {
 		go func() {
 			for uri := range filteredQueue {
-				enqueue(uri, queue)
+				addToQueue(uri, queue)
 			}
 			done <- true
 		}()
@@ -67,7 +67,7 @@ func filterQueue(in chan string, out chan string) {
 
 
 //Adding URLs found on a page which are unique and need to be crawled.
-func enqueue(uri string, queue chan string) {
+func addToQueue(uri string, queue chan string) {
 
 	start := time.Now()
 
@@ -91,7 +91,7 @@ func enqueue(uri string, queue chan string) {
 	foundUrls := []string{}
 	for _, link := range links {
 		//Fixing the URLs with relative or broken links before adding to the queue.
-		absolute := fixUrl(link, uri)
+		absolute := cleanUrl(link, uri)
 		foundUrls = append(foundUrls, absolute)       
 		if uri != "" {
 			go func() { queue <- absolute }()
@@ -124,7 +124,7 @@ func display(uri string,found []string,start time.Time,stop time.Time){
 
 
 //Check if broken URL or relative link and resolve it using default Golang Library
-func fixUrl(href, base string) string {
+func cleanUrl(href, base string) string {
 	uri, err := url.Parse(href)
 	if err != nil {
 		return ""
