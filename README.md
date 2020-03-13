@@ -15,7 +15,7 @@
     https://golang.org/doc/install
 
 
-## Install on Linux (STEP-1)
+## Install Go on Linux (STEP-1)
 	1)Use apt package installer
 ```console
 sudo add-apt-repository ppa:longsleep/golang-backports
