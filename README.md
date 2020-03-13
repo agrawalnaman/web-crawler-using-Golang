@@ -34,7 +34,7 @@ sudo apt install golang-go
 ```console
 alias gopath='export GOPATH=$(pwd);export PATH=$PATH:$GOPATH/bin'
 ```
-# If Golang is already installed on yout system and Go path is configured then follow the steps below to clone the repo and run the script in Linux console: 
+# If Golang is already installed on your system and Go path is configured then follow the steps below to clone the repo and run the script in Linux console: 
 	
 ##  Installing 3rd party package (Required dependency) (Step-3)
 ```console
