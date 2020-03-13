@@ -17,41 +17,42 @@
 
 ## Install on Linux (STEP-1)
 	1)Use apt package installer
-```bash
+```console
 sudo add-apt-repository ppa:longsleep/golang-backports
 sudo apt update
 sudo apt install golang-go
 ```
 	OR , Simply use Snap Installer
 `sudo snap install --classic go`
-## Configure Go Path (STEP-2)
+## Configure Go Path (Step-2)
 
 	1. Set $GOPATH environment variable points to Go Project directory.
 	2. Add $GOPATH/bin to $PATH
 	
 	NOTE: Can set using Bash Alias (run to reset in each Go Project Root)
-	set go path in linux using command : 
+	set go path in linux using command : 	
+```console
+alias gopath='export GOPATH=$(pwd);export PATH=$PATH:$GOPATH/bin'`
+```
+### If go already installed follow the steps below to clone the repo and run the script : 
 	
-`alias gopath='export GOPATH=$(pwd);export PATH=$PATH:$GOPATH/bin'`
+##  Installing 3rd party package (Required dependency) (Step-3)
+```console
+go get "github.com/jackdanger/collectlinks"
+```
 	
-##  Installing 3rd party package (REQUIRED) (STEP-3)
-`go get "github.com/jackdanger/collectlinks"`
-	
-## Git Clone the repo
-```bash
+## Git Clone the repo (Step-4)
+```console
 cd go/src
 git clone https://github.com/agrawalnaman/web-crawler-using-Golang.git
 ```
-## Run crawl.go
-```bash
+## Run crawl.go (Step-5)
+```console
 cd web-crawler-using-Golang/
 go run crawl.go http://rescale.com/
 ```
 
 
-	2)open terminal inside the src/crawl/
-	3)Run command :
-	go run crawl.go http://rescale.com/
 	
 
 
