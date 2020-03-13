@@ -32,7 +32,7 @@ sudo apt install golang-go
 	NOTE: Can set using Bash Alias (run to reset in each Go Project Root)
 	set go path in linux using command : 	
 ```console
-alias gopath='export GOPATH=$(pwd);export PATH=$PATH:$GOPATH/bin'`
+alias gopath='export GOPATH=$(pwd);export PATH=$PATH:$GOPATH/bin'
 ```
 # If go already installed follow the steps below to clone the repo and run the script : 
 	
