@@ -69,7 +69,7 @@ go run crawl.go https://www.crawler-test.com/
 Printed Timestamps after printing URLs of each page to show that multiple threads are simultaionsly parsing the URLs
 # Output
 ### for test input `go run crawl.go http://rescale.com/`
-<details><summary>Click here to view test run output</summary>
+<details><summary>Click here to view test run output snippet</summary>
 <p>
 
 	ubuntu@ip-10-0-0-136:~/go/src/web-crawler-using-Golang$ go run crawl.go http://rescale.com/
