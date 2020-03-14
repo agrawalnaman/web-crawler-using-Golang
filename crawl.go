@@ -1,6 +1,5 @@
 /*@ NAMAN AGRAWAL
 Description : It is a script which crawls a web page and puts all the unique URLs into a queue which is then crawled to fetch all the url on that page. It is multithreaded i.e. goroutines are used to speed up the crawling and one slow page will not block the crawling process. Used a mutex lock to print Urls of one thread at a time.
-
 output:  the page being crawled is printed without a tab space and all urls on that page are printed with a tab seperation.
 printed start and stop time of each page being crawled to check they are being crawled concurrently.
 */
