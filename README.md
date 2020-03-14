@@ -62,6 +62,10 @@ go run crawl.go https://www.crawler-test.com/links/repeated_internal_links
 ```golang
 go run crawl.go https://www.crawler-test.com/links/page_with_external_links
 ```
+A good website for testing the crawler is 
+```golang
+go run crawl.go https://www.crawler-test.com/
+```
 Printed Timestamps after printing URLs of each page to show that multiple threads are simultaionsly parsing the URLs
 # Output
 ### for test input `go run crawl.go http://rescale.com/`
